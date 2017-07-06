@@ -1,6 +1,6 @@
 # TodayTouch :  
 
-# Ionic Framework Demo App
+# Ionic Framework App
 
 TodayTouch is the Ionic app, Ionic app for mobile news, blog, fees, magazine application suitable to News Mobile App, Blog Mobile App, Magazine Mobile App… You can use this app for make a mobile news, blog, magazine application and upload it to any stores as Google play, Apple Store…
 
