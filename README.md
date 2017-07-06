@@ -1,13 +1,13 @@
 # TodayTouch :  
 
-# Ionic Framework App
+## Ionic Framework App
 
 TodayTouch is the Ionic app, Ionic app for mobile news, blog, fees, magazine application suitable to News Mobile App, Blog Mobile App, Magazine Mobile App… You can use this app for make a mobile news, blog, magazine application and upload it to any stores as Google play, Apple Store…
 
 This is a demo app built with the Ionic Framework
 So you can preview in the browser or run locally on an emulator or device.
 
-# App Fetures:
+## App Fetures:
 
 1. Homepage with nice menu
 2. Category
@@ -20,7 +20,7 @@ So you can preview in the browser or run locally on an emulator or device.
 9. Video page & play Video
 etc…
 
-# Technical Feature
+## Technical Feature
 
 1. Every screen has page
 2. HTML5 Hybrid App built with the Ionic framework and Angular JS.
@@ -30,7 +30,7 @@ etc…
 6. Easy installation, detailed quick start guide
 7. Included all of Javascript functions in document.
 
-# Run locally
+## Run locally
 
 This assumes you already have an emulator setup for iOS or Android. Substitute `ios` for `android` below to use Android.
 
@@ -40,6 +40,6 @@ This assumes you already have an emulator setup for iOS or Android. Substitute `
     ionic platform add ios
     ionic emulate ios
 
-# LICENSE
+## LICENSE
 
 Ionic is licensed under the MIT Open Source license. For more information, see the LICENSE file in this repository.
