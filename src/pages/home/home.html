@@ -1,8 +1,9 @@
-<ion-header>
+<ion-header>       
   <ion-navbar color="ybai">
     <button ion-button menuToggle>
       <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
     </button>
+
     <ion-title >
       TODAY TOUCH
     </ion-title>
@@ -14,21 +15,71 @@
         <ion-icon name="settings"></ion-icon>
       </button>
     </ion-buttons>
-    
   </ion-navbar>
- 
-    
-  
-  
+
 </ion-header>
 
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <ion-segment [(ngModel)]="category">
+    <ion-segment-button value="Home">
+        Home
+    </ion-segment-button>
+    <ion-segment-button value="Camnang">
+        Cẩm nang
+    </ion-segment-button>
+    <ion-segment-button value="batdongsan">
+        Bất động sản
+    </ion-segment-button>
+    <ion-segment-button value="dientudidong">
+      Điện tử di động
+  </ion-segment-button>
+    <ion-segment-button value="nutrition">
+      Ô tô - xe
+  </ion-segment-button>
+  <ion-segment-button value="nutrition">
+    Làm đẹp
+  </ion-segment-button>
+</ion-segment>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+<ion-card *ngFor="let card of cards">
+
+  <ion-item>
+    <ion-avatar item-left>
+      <img src="https://avatars.io/facebook/joshua.morony" />
+    </ion-avatar>
+    <h2>Josh Morony</h2>
+    <p>November 5, 1955</p>
+  </ion-item>
+
+  <img src="http://placehold.it/500x200" />
+
+  <ion-card-content>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="thumbs-up"></ion-icon>
+        <div>12 Likes</div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="text"></ion-icon>
+        <div>4 Comments</div>
+      </button>
+    </ion-col>
+    <ion-col center text-center>
+      <ion-note>
+        11h ago
+      </ion-note>
+    </ion-col>
+  </ion-row>
+
+</ion-card>
+
 </ion-content>
 <ion-content padding id="page1"></ion-content>
 
