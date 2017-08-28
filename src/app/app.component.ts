@@ -5,6 +5,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import {AmthucPage} from '../pages/Amthuc/Amthuc';
+import {LamdepPage} from '../pages/Lamdep/Lamdep';
+import {CuocSongPage} from '../pages/Cuocsong/Cuocsong';
+import {DienTuPage} from '../pages/Dientu/Dientu';
+import {DiDongPage} from '../pages/Didong/Didong';
+import {OtoxePage} from '../pages/Otoxe/Otoxe';
 
 @Component({
   templateUrl: 'app.html'
@@ -14,15 +20,29 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pages= [];
+  homes=[];
+  congnghe=[];
+  shownGroup = null;
+  shownGroup2 = null;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Ẩm Thực', component: AmthucPage },
+      { title: 'Làm Đẹp', component: LamdepPage },
+      { title: 'Cuộc Sống', component: CuocSongPage }
+    ];
+    this.homes = [
+      { title: 'Trang Chủ', component: HomePage}
+      
+    ];
+    this.congnghe=[
+      {title: 'Điện Tử', component: DienTuPage},
+      {title: 'Di Động', component: DiDongPage},
+      {title: 'Ô tô - xe', component: OtoxePage}
     ];
 
   }
@@ -41,4 +61,33 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
+
+  openSubCat(category){
+    console.log(category)
+  
+  }
+
+  toggleGroup(group) {
+    if (this.isGroupShown(group)) {
+        this.shownGroup = null;
+    } else {
+        this.shownGroup = group;
+        this.shownGroup2 = null;
+    }
+  };
+  isGroupShown(group) {
+    return this.shownGroup === group;
+};
+
+toggleGroup2(group) {
+  if (this.isGroupShown2(group)) {
+      this.shownGroup2 = null;
+  } else {
+      this.shownGroup2 = group;
+      this.shownGroup = null;
+  }
+};
+isGroupShown2(group) {
+  return this.shownGroup2 === group;
+};
 }

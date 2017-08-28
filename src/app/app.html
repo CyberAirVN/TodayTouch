@@ -6,127 +6,36 @@
   </ion-header>
 
   <ion-content>
-    <ion-list no-border>
-      
-          <ion-item>
-            <ion-icon name='home' item-start></ion-icon>
-            Hôm nay có gì?
-          </ion-item>
-
-          <ion-item>
-              Hôm nay có gì?
-            </ion-item> 
-            <ion-item>
-                Hôm nay có gì?
-              </ion-item>        
-
-          <ion-item>
-            <ion-icon name='book' item-start></ion-icon>
+    <ion-list>
+<!-- Trang chủ -->
+        <button menuClose ion-item *ngFor="let h of homes" (click)="openPage(h)" icon-start>
+            <ion-icon name="home"></ion-icon>  
+            Trang Chủ
+          </button>
+<!-- Trang chủ end -->
+<!-- Cẩm nang menu -->
+        <button ion-item (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}" icon-start>
+            <ion-icon name="book"></ion-icon>  
             Cẩm nang
-          </ion-item>
-
-          <ion-item>
-              Cẩm nang
-            </ion-item>
-            <ion-item>
-                Cẩm nang
-              </ion-item>
-      
-          <ion-item>
-            <ion-icon name='planet' item-start></ion-icon>
-            Bất động sản
-          </ion-item>
-
-          <ion-item>
-              Bất động sản
-            </ion-item><ion-item>
-                Bất động sản
-              </ion-item>
-      
-          <ion-item>
-            <ion-icon name='phone-landscape' item-start></ion-icon>
-            Điện tử di động
-          </ion-item>
-
-          <ion-item>
-              Điện tử di động
-            </ion-item>
-            <ion-item>
-                Điện tử di động
-              </ion-item>
-
-          <ion-item>
-            <ion-icon name='car' item-start></ion-icon>
-            Ô tô - xe
-          </ion-item>
-
-          <ion-item>
-              Ô tô - xe
-            </ion-item>
-            <ion-item>
-              Ô tô - xe
-            </ion-item>
-
-          <ion-item>
-            <ion-icon name='flower' item-start></ion-icon>
-            Làm đẹp
-          </ion-item>
-
-          <ion-item>
-              Làm đẹp
-            </ion-item>
-            <ion-item>
-                Làm đẹp
-              </ion-item>
-
-          <ion-item>
-            <ion-icon name='school' item-start></ion-icon>
-            Giáo dục
-          </ion-item>
-
-          <ion-item>
-              Giáo dục
-            </ion-item>
-            <ion-item>
-                Giáo dục
-              </ion-item>
-
-          <ion-item>
-            <ion-icon name='cube' item-start></ion-icon>
-           Nội ngoại thất
-          </ion-item>
-
-          <ion-item>
-             Nội ngoại thất
-            </ion-item><ion-item>
-               Nội ngoại thất
-              </ion-item>
-
-          <ion-item>
-            <ion-icon name='person' item-start></ion-icon>
-           Việc làm 
-          </ion-item>
-
-          <ion-item>
-             Việc làm 
-            </ion-item>
-            <ion-item>
-               Việc làm 
-              </ion-item>
-
-          <ion-item>
-            <ion-icon name='globe' item-start></ion-icon>
-           Dịch vụ
-          </ion-item>
-
-          <ion-item>
-             Dịch vụ
-            </ion-item>
-            <ion-item>
-               Dịch vụ
-              </ion-item>
-        </ion-list>
-      
+          </button>
+          <ion-list  *ngIf="isGroupShown(i)" (click)="openSubCat($event,category)">
+              <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" icon-start>
+              {{p.title}}
+              </button>
+            </ion-list>
+<!--Cẩm nang end  -->
+<!-- Công nghệ menu -->
+        <button ion-item (click)="toggleGroup2(i)" [ngClass]="{active: isGroupShown2(i)}" icon-start>
+          <ion-icon name="git-branch"></ion-icon>  
+          Công nghệ
+        </button>
+        <ion-list  *ngIf="isGroupShown2(i)" (click)="openSubCat($event,category)">
+            <button menuClose ion-item *ngFor="let c of congnghe" (click)="openPage(c)" icon-start>
+              {{c.title}}
+            </button>
+          </ion-list>
+<!-- Công nghệ end -->
+    </ion-list>
   </ion-content>
 
 </ion-menu>
