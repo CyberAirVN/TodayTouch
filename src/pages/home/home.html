@@ -18,9 +18,9 @@
   </ion-navbar>
 
 </ion-header>
-<ion-content padding id="page1">
-  <ion-navbar>
-    <ion-segment color="xanh" [(ngModel)]="tabs">
+<ion-content padding id="page1" class="padding-0">
+    
+    <ion-segment  color="xanh" [(ngModel)]="tabs" >
       <ion-segment-button (click)="selectTab(0)"
                           value="0"> TOP NEWS
     </ion-segment-button>
@@ -30,13 +30,25 @@
     <ion-segment-button (click)="selectTab(2)"
                         value="2">TRENDING
                         </ion-segment-button>
+    <ion-segment-button (click)="selectTab(3)"
+                        value="3">LAST
+                      </ion-segment-button>
+    <ion-segment-button (click)="selectTab(4)"
+                        value="4">FEATURE
+                    </ion-segment-button>
     <div id="slide" class="slide"></div>
   </ion-segment>
-  </ion-navbar>
+ 
   <ion-slides #pageSlider (ionSlideWillChange)="changeWillSlide($event)">
     
-       <ion-slide>
-         <h1>ContentTab 1</h1>
+       <ion-slide pager="true" class="" >
+         <ion-content class="card-background-page">
+          <div class="list list1">
+          <img src="./assets/images/test.jpg" class="img1"/>
+          <div class="card-title"><h2 class="title-h2">
+            This is basically tutorials on ionic framework for mobile app development</h2></div>
+          </div>
+         </ion-content>
        </ion-slide>
        <ion-slide>
          <h1>ContentTab 2</h1>
@@ -44,6 +56,12 @@
        <ion-slide>
          <h1>ContentTab 3</h1>
        </ion-slide>
+       <ion-slide>
+          <h1>ContentTab 4</h1>
+        </ion-slide>
+        <ion-slide>
+            <h1>ContentTab 5</h1>
+          </ion-slide>
      </ion-slides>
 </ion-content>
 
