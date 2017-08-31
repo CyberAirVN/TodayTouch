@@ -10,13 +10,13 @@
 <!-- Trang chủ -->
         <button menuClose ion-item *ngFor="let h of homes" (click)="openPage(h)" icon-start>
             <ion-icon name="home"></ion-icon>  
-            Trang Chủ
+            Home
           </button>
 <!-- Trang chủ end -->
 <!-- Cẩm nang menu -->
         <button ion-item (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}" icon-start>
             <ion-icon name="book"></ion-icon>  
-            Cẩm nang
+            Handbook
           </button>
           <ion-list  *ngIf="isGroupShown(i)" (click)="openSubCat($event,category)">
               <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" icon-start>
@@ -27,7 +27,7 @@
 <!-- Công nghệ menu -->
         <button ion-item (click)="toggleGroup2(i)" [ngClass]="{active: isGroupShown2(i)}" icon-start>
           <ion-icon name="git-branch"></ion-icon>  
-          Công nghệ
+          Technology
         </button>
         <ion-list  *ngIf="isGroupShown2(i)" (click)="openSubCat($event,category)">
             <button menuClose ion-item *ngFor="let c of congnghe" (click)="openPage(c)" icon-start>

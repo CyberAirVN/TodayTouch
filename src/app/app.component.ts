@@ -31,18 +31,18 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Ẩm Thực', component: AmthucPage },
-      { title: 'Làm Đẹp', component: LamdepPage },
-      { title: 'Cuộc Sống', component: CuocSongPage }
+      { title: 'Food', component: AmthucPage },
+      { title: 'Beautiful', component: LamdepPage },
+      { title: 'Life', component: CuocSongPage }
     ];
     this.homes = [
-      { title: 'Trang Chủ', component: HomePage}
+      { title: 'Home', component: HomePage}
       
     ];
     this.congnghe=[
-      {title: 'Điện Tử', component: DienTuPage},
-      {title: 'Di Động', component: DiDongPage},
-      {title: 'Ô tô - xe', component: OtoxePage}
+      {title: 'Electronics', component: DienTuPage},
+      {title: 'Mobile', component: DiDongPage},
+      {title: 'Car-motobike', component: OtoxePage}
     ];
 
   }
