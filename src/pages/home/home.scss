@@ -1,96 +1,146 @@
+
+$backgroud: rgba(158, 158, 158, 0.31);
+$bg-list-header:linear-gradient(120deg, #155799, #159957);
 page-home {
-    // Card header    
-    img.img1 {
-      object-fit: fill;
-      width: 100%;
-    } 
-    .list.list1 {
+  ion-card.card.card-md {
+    margin: 5px 0px 5px 0px;
     width: 100%;
-    height: 230px;}
-    .title-h2{
-      font-weight: 400;
-    }
-   .card-title{
-      position: absolute;
-      top: 139px;
-      text-align: left;
-      padding-left: 5px;
-      color: white;
-    }
-    .scroll-content {
-      padding: 0 !important;
-      bottom: -18px;
-      overflow-x: unset;
-      overflow-y: unset;
-    }
-    ion-slide{
-      padding: 10px;
-    }
-    .swiper-slide{
-      align-items: unset;
-    }
-    ion-icon.icon.icon-md.ion-md-settings {
-    color: #FFFFFF;}
-    ion-icon.icon.icon-md.ion-md-search {
-      color: #FFFFFF;}
-    ion-icon.icon.icon-md.ion-md-menu {
-        color: #FFFFFF;
-    }
-    $num-of-tabs: 5;
     
-     @mixin tabs {
-       @for $i from 1 through $num-of-tabs {
-         &:nth-of-type(#{$i}) {
-           &.segment-activated {
-             ~ .slide {
-               left: calc((100% / #{$num-of-tabs}) * #{$i - 1});
-             }
+  }
+  ion-list-header.item.item-md.list-header.list-header-md {
+    color: white;
+    background-image:$bg-list-header;
+    margin-top: 10px;
+    margin-bottom: 5px;
+   
+  }
+  
+  
+  .content-md {
+    color: #000;
+    background-color:$backgroud;
+}
+  button.button-md{
+    font-size: 1rem;
+    text-transform: unset;
+    padding: 0;
+  }
+  .col{
+    padding: 0;
+  }
+  .item-md h2 {
+    font-weight: 600;}
+    ion-label.label.label-md {
+      white-space: unset;
+      
+    }
+  // Card header  
+  ion-list.list.list-md {
+    margin-bottom: 0px;
+    
+
+  }  
+  img.img1 {
+    object-fit: fill;
+    width: 100%;
+  } 
+  .list.list1 {
+    width: 100%;
+    position: relative;}
+    .title-content{
+      position: absolute;
+      margin: 0;
+      bottom: 10px;
+    }
+  .title-h2{
+   
+    text-align: left;
+    color: white;
+    margin-left: 4px;
+  }
+ .card-title{
+    position: absolute;
+    top: 139px;
+    text-align: left;
+    padding-left: 5px;
+    color: white;
+  }
+  .scroll-content {
+    padding: 0 !important;
+    overflow-x: unset;
+    overflow-y: scroll;
+  }
+  .swiper-container{
+    height: auto;
+  }
+  ion-slide{
+    padding: 10px;
+  }
+  .swiper-slide{
+    align-items: unset;
+  }
+ 
+  ion-icon.icon.icon-md.ion-md-settings {
+  color: #FFFFFF;}
+  ion-icon.icon.icon-md.ion-md-search {
+    color: #FFFFFF;}
+  ion-icon.icon.icon-md.ion-md-menu {
+      color: #FFFFFF;
+  }
+  $num-of-tabs: 5;
+  
+   @mixin tabs {
+     @for $i from 1 through $num-of-tabs {
+       &:nth-of-type(#{$i}) {
+         &.segment-activated {
+           ~ .slide {
+             left: calc((100% / #{$num-of-tabs}) * #{$i - 1});
            }
          }
        }
      }
+   }
+  
+   ion-segment {
+    display: block;
+    white-space: nowrap;
+    font-size: 0;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    ion-segment-button.segment-button {
+        display: inline-block;
+        min-width: 100px;
+        width: auto;
+    }
+}
+  
+   .slide {
+     background: dodgerblue;
+     width: calc(100% / #{$num-of-tabs});
+     height: 4px;
+     position: absolute;
+     left: 0;
+     top: calc(100% - 4px);
+     transition: left 0.3s ease-out;
+   }
+   ion-segment {
+    background-image: linear-gradient(120deg, #155799, #159957);
+   }
+   .segment-md-xanh .segment-button.activated, .segment-md-xanh .segment-button.segment-activated {
+    border-color: #FFFFFF;
+    color: #fff;
+    opacity: 1;}
+
     
-     ion-segment {
-      display: block;
-      white-space: nowrap;
-      font-size: 0;
-      overflow: auto;
-  
-      &::-webkit-scrollbar {
-          width: 0;
-          height: 0;
-          display: none;
-      }
-  
-      ion-segment-button.segment-button {
-          display: inline-block;
-          min-width: 100px;
-          width: auto;
-      }
-  }
-    
-     .slide {
-       background: dodgerblue;
-       width: calc(100% / #{$num-of-tabs});
-       height: 4px;
-       position: absolute;
-       left: 0;
-       top: calc(100% - 4px);
-       transition: left 0.3s ease-out;
-     }
-     ion-segment {
-      background-image: linear-gradient(120deg, #155799, #159957);
-     }
-     .segment-md-xanh .segment-button.activated, .segment-md-xanh .segment-button.segment-activated {
-      border-color: #FFFFFF;
-      color: #fff;
-      opacity: 1;}
-  
-      
-  }
-  
-  
-  
-  
-  
-  
+}
+
+
+
+
+
