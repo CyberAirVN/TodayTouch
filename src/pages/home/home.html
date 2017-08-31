@@ -19,7 +19,6 @@
 
 </ion-header>
 <ion-content padding id="page1" class="padding-0">
-    <!-- Toobar  -->
     <ion-segment  color="xanh" [(ngModel)]="tabs" >
       <ion-segment-button (click)="selectTab(0)"
                           value="0"> TOP NEWS
@@ -36,21 +35,221 @@
     <ion-segment-button (click)="selectTab(4)"
                         value="4">FEATURE
                     </ion-segment-button>
-    <div id="slide" class="slide"></div>
   </ion-segment>
- <!-- Toolbar end -->
+
   <ion-slides #pageSlider (ionSlideWillChange)="changeWillSlide($event)">
-    
+    <!-- Top-new -->
        <ion-slide pager="true" class="" >
-         <ion-content class="card-background-page">
           <div class="list list1">
-          <img src="./assets/images/test.jpg" class="img1"/>
-          <div class="card-title"><h2 class="title-h2">
-            This is basically tutorials on ionic framework for mobile app development</h2></div>
+          <div><img src="./assets/images/test.jpg" class="img1" style="display: block;"/></div>
+          <div class="title-content" style="     font-weight: 500;text-align: left; color:white ;margin-left:5px"> 
+            Goodbye, home button: iPhone 8 may be more radical than thought</div>
           </div>
-         </ion-content>
-       </ion-slide>
-       <!-- Slide 2 begin tab -->
+          <ion-list>
+            <ion-card>
+              <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="./assets/images/test.jpg">
+                  </ion-thumbnail>
+                    <div ><h2 class="">Goodbye, home button: iPhone 8 may be more radical than thought  </h2></div>
+                  <ion-row >
+                      <ion-col>
+                        <button ion-button color="primary" clear small icon-start>
+                          <ion-icon name='thumbs-up'></ion-icon>
+                          12 Likes
+                        </button>
+                      </ion-col>
+                      <ion-col>
+                        <button ion-button color="primary" clear small icon-start>
+                          <ion-icon name='text'></ion-icon>
+                          4 Comments
+                        </button>
+                      </ion-col>
+                      
+                    </ion-row>
+                </ion-item></ion-card>
+                <ion-card>
+                <ion-item>
+                    <ion-thumbnail item-start>
+                      <img src="./assets/images/test.jpg">
+                    </ion-thumbnail>
+                      <div ><h2 class="">Goodbye, home button: iPhone 8 may be more radical than thought </h2></div>
+                    <ion-row >
+                        <ion-col>
+                          <button ion-button color="primary" clear small icon-start>
+                            <ion-icon name='thumbs-up'></ion-icon>
+                            12 Likes
+                          </button>
+                        </ion-col>
+                        <ion-col>
+                          <button ion-button color="primary" clear small icon-start>
+                            <ion-icon name='text'></ion-icon>
+                            4 Comments
+                          </button>
+                        </ion-col>
+                        
+                      </ion-row>
+                  </ion-item></ion-card>
+             
+              </ion-list>
+              <ion-list>
+                  <ion-list-header >
+                    <ion-row>
+                    <ion-col text-left>
+                    ENTERTAINMENT</ion-col>
+                    <ion-col text-right>
+                        MORE</ion-col></ion-row>
+                  </ion-list-header>
+                  
+              </ion-list>
+              <ion-card>
+                  <ion-item>
+                      <ion-thumbnail item-start>
+                        <img src="./assets/images/test.jpg">
+                      </ion-thumbnail>
+                        <div ><h2 class="">Goodbye, home button: iPhone 8 may be more radical than thought  </h2></div>
+                      <ion-row >
+                          <ion-col>
+                            <button ion-button color="primary" clear small icon-start>
+                              <ion-icon name='thumbs-up'></ion-icon>
+                              12 Likes
+                            </button>
+                          </ion-col>
+                          <ion-col>
+                            <button ion-button color="primary" clear small icon-start>
+                              <ion-icon name='text'></ion-icon>
+                              4 Comments
+                            </button>
+                          </ion-col>
+                          
+                        </ion-row>
+                    </ion-item>
+                  </ion-card>
+                  <ion-list>
+                      <ion-list-header >
+                        <ion-row>
+                        <ion-col text-left>
+                        TV</ion-col>
+                        <ion-col text-right>
+                            MORE</ion-col></ion-row>
+                      </ion-list-header>
+                      
+                  </ion-list>
+                  <ion-card>
+                      <ion-item>
+                          <ion-thumbnail item-start>
+                            <img src="./assets/images/test.jpg">
+                          </ion-thumbnail>
+                            <div ><h2 class="">Goodbye, home button: iPhone 8 may be more radical than thought </h2></div>
+                          <ion-row >
+                              <ion-col>
+                                <button ion-button color="primary" clear small icon-start>
+                                  <ion-icon name='thumbs-up'></ion-icon>
+                                  12 Likes
+                                </button>
+                              </ion-col>
+                              <ion-col>
+                                <button ion-button color="primary" clear small icon-start>
+                                  <ion-icon name='text'></ion-icon>
+                                  4 Comments
+                                </button>
+                              </ion-col>
+                              
+                            </ion-row>
+                        </ion-item>
+                      </ion-card>
+                      <ion-list>
+                          <ion-list-header >
+                            <ion-row>
+                            <ion-col text-left>
+                            CITY</ion-col>
+                            <ion-col text-right>
+                                MORE</ion-col></ion-row>
+                          </ion-list-header>
+                          
+                      </ion-list>
+                      <ion-card>
+                          <ion-item>
+                              <ion-thumbnail item-start>
+                                <img src="./assets/images/test.jpg">
+                              </ion-thumbnail>
+                                <div ><h2 class="">Goodbye, home button: iPhone 8 may be more radical than thought  </h2></div>
+                              <ion-row >
+                                  <ion-col>
+                                    <button ion-button color="primary" clear small icon-start>
+                                      <ion-icon name='thumbs-up'></ion-icon>
+                                      12 Likes
+                                    </button>
+                                  </ion-col>
+                                  <ion-col>
+                                    <button ion-button color="primary" clear small icon-start>
+                                      <ion-icon name='text'></ion-icon>
+                                      4 Comments
+                                    </button>
+                                  </ion-col>
+                                  
+                                </ion-row>
+                            </ion-item>
+                          </ion-card>
+                          <ion-list>
+                              <ion-list-header >
+                                <ion-row>
+                                <ion-col text-left>
+                                TECH</ion-col>
+                                <ion-col text-right>
+                                    MORE</ion-col></ion-row>
+                              </ion-list-header>
+                          </ion-list>
+                          <div class="list list1">
+                              <div><img src="./assets/images/test.jpg" class="img1" style="display: block;"/></div>
+                              <div class="title-content" style="text-align: left; color:white ;margin-left:5px"> 
+                                Goodbye, home button: iPhone 8 may be more radical than thought</div>
+                          </div>
+                          <ion-card>
+                              <ion-item>
+                                  <ion-thumbnail item-start>
+                                    <img src="./assets/images/test.jpg">
+                                  </ion-thumbnail>
+                                    <div ><h2 class="">Goodbye, home button: iPhone 8 may be more radical than thought  </h2></div>
+                                  <ion-row >
+                                      <ion-col>
+                                        <button ion-button color="primary" clear small icon-start>
+                                          <ion-icon name='thumbs-up'></ion-icon>
+                                          12 Likes
+                                        </button>
+                                      </ion-col>
+                                      <ion-col>
+                                        <button ion-button color="primary" clear small icon-start>
+                                          <ion-icon name='text'></ion-icon>
+                                          4 Comments
+                                        </button>
+                                      </ion-col>
+                                      
+                                    </ion-row>
+                                </ion-item>
+                              </ion-card>
+                              <ion-card>
+                                  <ion-item>
+                                        <div ><h2 class="">Goodbye, home button: iPhone 8 may be more radical than thought  </h2></div>
+                                        <div  style=" margin-top: 10px;"  > <p>  Goodbye, home button: iPhone 8 may be more radical than thought</p></div>
+                                        <ion-row >
+                                          <ion-col>
+                                            <button ion-button color="primary" clear small icon-start>
+                                              <ion-icon name='thumbs-up'></ion-icon>
+                                              12 Likes
+                                            </button>
+                                          </ion-col>
+                                          <ion-col>
+                                            <button ion-button color="primary" clear small icon-start>
+                                              <ion-icon name='text'></ion-icon>
+                                              4 Comments
+                                            </button>
+                                          </ion-col>
+                                          
+                                        </ion-row>
+                                    </ion-item>
+                                  </ion-card>
+            </ion-slide>
        <ion-slide>
          <ion-grid>
           <ion-row>
@@ -237,6 +436,7 @@
         <ion-slide>
             <h1>ContentTab 5</h1>
           </ion-slide>
+          <!-- End Slide-Content -->
      </ion-slides>
 </ion-content>
 
