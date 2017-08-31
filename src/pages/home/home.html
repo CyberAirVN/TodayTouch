@@ -19,7 +19,7 @@
 
 </ion-header>
 <ion-content padding id="page1" class="padding-0">
-    
+    <!-- Toobar  -->
     <ion-segment  color="xanh" [(ngModel)]="tabs" >
       <ion-segment-button (click)="selectTab(0)"
                           value="0"> TOP NEWS
@@ -38,7 +38,7 @@
                     </ion-segment-button>
     <div id="slide" class="slide"></div>
   </ion-segment>
- 
+ <!-- Toolbar end -->
   <ion-slides #pageSlider (ionSlideWillChange)="changeWillSlide($event)">
     
        <ion-slide pager="true" class="" >
@@ -50,12 +50,187 @@
           </div>
          </ion-content>
        </ion-slide>
+       <!-- Slide 2 begin tab -->
        <ion-slide>
-         <h1>ContentTab 2</h1>
+         <ion-grid>
+          <ion-row>
+            <ion-col>
+              <img src="http://hinhnendep.vn/wp-content/uploads/2017/05/hinh-anh-gau-bong-38.jpg">
+              <h3> NHỮNG CÔ NÀNG GỢI CẢM NHẤT LQM</h3>
+              <p>Miền đất hứa là một đấu trường khốc liệt, nơi những anh hùng kiệt xuất từ tứ phương tập hợp lại để chiến đấu lẫn nhau.
+                  Tất nhiên cũng không thể thiếu đi những ...</p>
+                  <ion-row no-padding>
+                      <ion-col>
+                        <button ion-button clear small color="grey" icon-start>
+                          <ion-icon name='star'></ion-icon>
+                          Favorite
+                        </button>
+                      </ion-col>
+                      <ion-col text-center>
+                        <button ion-button clear small icon-start (click)="openNavDetailsPage(item)">
+                          <ion-icon name='book'></ion-icon>
+                          Read
+                        </button>
+                      </ion-col>
+                      <ion-col text-right>
+                        <button ion-button clear small icon-start>
+                          <ion-icon name='git-merge'></ion-icon>
+                          Share
+                        </button>
+                      </ion-col>
+                    </ion-row>
+            </ion-col>
+          </ion-row>
+          <!-- List News -->
+          <ion-list>   
+              <ion-item>
+                      <ion-thumbnail item-start>
+                        <img src="https://www.vietravel.com/Gallery/images/19-9-2013/3820137200900104k_Autumn%20in%20Korea.jpg">
+                      </ion-thumbnail>
+                      <h2>U22 Việt Nam về nước sau khi thua Thái Lan </h2>
+                      <ion-col text-center>
+                          <button ion-button clear small icon-start>
+                            <ion-icon name='book'></ion-icon>
+                            Read
+                          </button>
+                        </ion-col>
+                        <ion-col text-center>
+                            <button ion-button clear small icon-start>
+                              <ion-icon name='Share'></ion-icon>
+                              Share
+                            </button>
+                          </ion-col>
+                     
+                    </ion-item>
+                    <ion-item>
+                        <ion-thumbnail item-start>
+                          <img src="https://www.vietravel.com/Gallery/images/19-9-2013/3820137200900104k_Autumn%20in%20Korea.jpg">
+                        </ion-thumbnail>
+                        <h2>U22 Việt Nam về nước sau khi thua Thái Lan </h2>
+                        <ion-col text-center>
+                            <button ion-button clear small icon-start>
+                              <ion-icon name='book'></ion-icon>
+                              Read
+                            </button>
+                          </ion-col>
+                          <ion-col text-center>
+                              <button ion-button clear small icon-start>
+                                <ion-icon name='Share'></ion-icon>
+                                Share
+                              </button>
+                            </ion-col>
+                       
+                      </ion-item>
+                      <ion-item>
+                          <ion-thumbnail item-start>
+                            <img src="https://www.vietravel.com/Gallery/images/19-9-2013/3820137200900104k_Autumn%20in%20Korea.jpg">
+                          </ion-thumbnail>
+                          <h2>U22 Việt Nam về nước sau khi thua Thái Lan </h2>
+                          <ion-col text-center>
+                              <button ion-button clear small icon-start>
+                                <ion-icon name='book'></ion-icon>
+                                Read
+                              </button>
+                            </ion-col>
+                            <ion-col text-center>
+                                <button ion-button clear small icon-start>
+                                  <ion-icon name='Share'></ion-icon>
+                                  Share
+                                </button>
+                              </ion-col>
+                         
+                        </ion-item>
+                        <ion-item>
+                            <ion-thumbnail item-start>
+                              <img src="https://www.vietravel.com/Gallery/images/19-9-2013/3820137200900104k_Autumn%20in%20Korea.jpg">
+                            </ion-thumbnail>
+                            <h2>U22 Việt Nam về nước sau khi thua Thái Lan </h2>
+                            <ion-col text-center>
+                                <button ion-button clear small icon-start>
+                                  <ion-icon name='book'></ion-icon>
+                                  Read
+                                </button>
+                              </ion-col>
+                              <ion-col text-center>
+                                  <button ion-button clear small icon-start>
+                                    <ion-icon name='Share'></ion-icon>
+                                    Share
+                                  </button>
+                                </ion-col>
+                           
+                          </ion-item>
+                          <ion-item>
+                              <ion-thumbnail item-start>
+                                <img src="https://www.vietravel.com/Gallery/images/19-9-2013/3820137200900104k_Autumn%20in%20Korea.jpg">
+                              </ion-thumbnail>
+                              <h2>U22 Việt Nam về nước sau khi thua Thái Lan </h2>
+                              <ion-col text-center>
+                                  <button ion-button clear small icon-start>
+                                    <ion-icon name='book'></ion-icon>
+                                    Read
+                                  </button>
+                                </ion-col>
+                                <ion-col text-center>
+                                    <button ion-button clear small icon-start>
+                                      <ion-icon name='Share'></ion-icon>
+                                      Share
+                                    </button>
+                                  </ion-col>
+                             
+                            </ion-item>
+                            <ion-item>
+                                <ion-thumbnail item-start>
+                                  <img src="https://www.vietravel.com/Gallery/images/19-9-2013/3820137200900104k_Autumn%20in%20Korea.jpg">
+                                </ion-thumbnail>
+                                <h2>U22 Việt Nam về nước sau khi thua Thái Lan </h2>
+                                <ion-col text-center>
+                                    <button ion-button clear small icon-start>
+                                      <ion-icon name='book'></ion-icon>
+                                      Read
+                                    </button>
+                                  </ion-col>
+                                  <ion-col text-center>
+                                      <button ion-button clear small icon-start>
+                                        <ion-icon name='Share'></ion-icon>
+                                        Share
+                                      </button>
+                                    </ion-col>
+                               
+                              </ion-item>
+                  </ion-list>
+              <!--List news end  -->
+         </ion-grid> 
        </ion-slide>
+    <!--Slide 2 end tab  -->
+    <!-- Slide 3 begin tab -->
        <ion-slide>
-         <h1>ContentTab 3</h1>
+         <ion-grid>
+           <ion-row>
+             <ion-list>
+                <ion-item>
+                    <ion-thumbnail item-start>
+                      <img src="https://www.vietravel.com/Gallery/images/19-9-2013/3820137200900104k_Autumn%20in%20Korea.jpg">
+                    </ion-thumbnail>
+                    <h2>U22 Việt Nam về nước sau khi thua Thái Lan </h2>
+                    <ion-col text-center>
+                        <button ion-button clear small icon-start>
+                          <ion-icon name='book'></ion-icon>
+                          Read
+                        </button>
+                      </ion-col>
+                      <ion-col text-center>
+                          <button ion-button clear small icon-start>
+                            <ion-icon name='Share'></ion-icon>
+                            Share
+                          </button>
+                        </ion-col>
+                  </ion-item>
+             </ion-list>
+           </ion-row>
+           
+         </ion-grid>
        </ion-slide>
+    <!-- Slide 3 end tab -->
        <ion-slide>
           <h1>ContentTab 4</h1>
         </ion-slide>
