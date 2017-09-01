@@ -8,15 +8,7 @@ page-home {
     
   }
   
-<<<<<<< HEAD
 
-=======
-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
->>>>>>> 9ec0f5ce73b8c6ac88dc17bf52891b047dbce3e8
   ion-list-header.item.item-md.list-header.list-header-md {
     color: white;
     background-image:$bg-list-header;
@@ -27,6 +19,9 @@ img{
   .item-md ion-thumbnail img {
     width: auto;
     height: 94px;
+    display: block;
+     margin-left: auto;
+      margin-right: auto;
 }
   
   .content-md {
@@ -56,6 +51,7 @@ img{
   img.img1 {
     object-fit: fill;
     width: 100%;
+    
     ;
   } 
   .list.list1 {
