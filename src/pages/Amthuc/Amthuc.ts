@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'amthuc',
+  selector: 'page-Amthuc',
   templateUrl: 'Amthuc.html'
 })
 export class AmthucPage {
