@@ -11,6 +11,8 @@ import {CuocSongPage} from '../pages/Cuocsong/Cuocsong';
 import {DienTuPage} from '../pages/Dientu/Dientu';
 import {DiDongPage} from '../pages/Didong/Didong';
 import {OtoxePage} from '../pages/Otoxe/Otoxe';
+import {BriefsPage} from '../pages/Briefs/Briefs';
+import {TrendingPage} from '../pages/Trending/Trending';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -25,7 +27,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CuocSongPage,
     DienTuPage,
     DiDongPage,
-    OtoxePage
+    OtoxePage,
+    BriefsPage,
+    TrendingPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CuocSongPage,
     DienTuPage,
     DiDongPage,
-    OtoxePage
+    OtoxePage,
+    BriefsPage,
+    TrendingPage
   ],
   providers: [
     StatusBar,

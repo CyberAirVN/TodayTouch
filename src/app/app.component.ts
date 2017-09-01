@@ -11,6 +11,8 @@ import {CuocSongPage} from '../pages/Cuocsong/Cuocsong';
 import {DienTuPage} from '../pages/Dientu/Dientu';
 import {DiDongPage} from '../pages/Didong/Didong';
 import {OtoxePage} from '../pages/Otoxe/Otoxe';
+import {BriefsPage} from '../pages/Briefs/Briefs';
+import {TrendingPage} from '../pages/Trending/Trending';
 
 @Component({
   templateUrl: 'app.html'
