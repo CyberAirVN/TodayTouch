@@ -8,7 +8,11 @@ page-home {
     
   }
   
-
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
   ion-list-header.item.item-md.list-header.list-header-md {
     color: white;
     background-image:$bg-list-header;
