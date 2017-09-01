@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'cuocsong',
+  selector: 'page-cuocsong',
   templateUrl: 'Cuocsong.html'
 })
 export class CuocSongPage {
