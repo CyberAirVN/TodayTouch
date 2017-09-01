@@ -14,6 +14,9 @@ import {OtoxePage} from '../pages/Otoxe/Otoxe';
 import {BriefsPage} from '../pages/Briefs/Briefs';
 import {TrendingPage} from '../pages/Trending/Trending';
 import {DetailsPage} from '../pages/detail/detail';
+import {TopnewPage} from '../pages/topnew/topnew'; 
+import {LatestPage} from '../pages/latest/latest';
+import {FeaturePage} from '../pages/feature/feature';
 
 @Component({
   templateUrl: 'app.html'
