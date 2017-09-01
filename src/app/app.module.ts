@@ -13,9 +13,8 @@ import {DiDongPage} from '../pages/Didong/Didong';
 import {OtoxePage} from '../pages/Otoxe/Otoxe';
 import {BriefsPage} from '../pages/Briefs/Briefs';
 import {TrendingPage} from '../pages/Trending/Trending';
-import {TopnewPage} from '../pages/topnew/topnew';
-import {FeaturePage} from '../pages/feature/feature';
-import {LatestPage} from '../pages/latest/latest';
+import {DetailsPage} from '../pages/detail/detail';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -33,9 +32,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     OtoxePage,
     BriefsPage,
     TrendingPage,
-    TopnewPage,
-    FeaturePage,
-    LatestPage
+    DetailsPage
   ],
   imports: [
     BrowserModule,
@@ -54,9 +51,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     OtoxePage,
     BriefsPage,
     TrendingPage,
-    TopnewPage,
-    FeaturePage,
-    LatestPage
+    DetailsPage
   ],
   providers: [
     StatusBar,

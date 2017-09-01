@@ -13,6 +13,7 @@ import {DiDongPage} from '../pages/Didong/Didong';
 import {OtoxePage} from '../pages/Otoxe/Otoxe';
 import {BriefsPage} from '../pages/Briefs/Briefs';
 import {TrendingPage} from '../pages/Trending/Trending';
+import {DetailsPage} from '../pages/detail/detail';
 
 @Component({
   templateUrl: 'app.html'
