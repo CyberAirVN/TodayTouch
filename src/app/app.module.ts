@@ -17,9 +17,10 @@ import {DetailsPage} from '../pages/detail/detail';
 import {TopnewPage} from '../pages/topnew/topnew'; 
 import {LatestPage} from '../pages/latest/latest';
 import {FeaturePage} from '../pages/feature/feature';
-
+import { VideoPage } from '../pages/video/video';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {VideocategoryPage} from '../pages/videocategory/videocategory';
 
 @NgModule({
   declarations: [
@@ -37,8 +38,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DetailsPage,
     TopnewPage,
     LatestPage,
-    FeaturePage
-    
+    FeaturePage,
+    VideoPage,
+    VideocategoryPage
   ],
   imports: [
     BrowserModule,
@@ -60,7 +62,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DetailsPage,
     TopnewPage,
     LatestPage,
-    FeaturePage
+    FeaturePage,
+    VideoPage,
+    VideocategoryPage
   ],
   providers: [
     StatusBar,

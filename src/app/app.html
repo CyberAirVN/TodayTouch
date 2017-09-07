@@ -35,6 +35,12 @@
             </button>
           </ion-list>
 <!-- Công nghệ end -->
+<!-- Video -->
+      <button menuClose ion-item *ngFor="let v of video" (click)="openPage(v)" icon-start>
+        <ion-icon name="youtube"></ion-icon>  
+        Video
+      </button>
+<!-- End-Video -->
     </ion-list>
   </ion-content>
 

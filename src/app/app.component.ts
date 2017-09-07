@@ -2,7 +2,6 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import {AmthucPage} from '../pages/Amthuc/Amthuc';
@@ -17,7 +16,7 @@ import {DetailsPage} from '../pages/detail/detail';
 import {TopnewPage} from '../pages/topnew/topnew'; 
 import {LatestPage} from '../pages/latest/latest';
 import {FeaturePage} from '../pages/feature/feature';
-
+import {VideocategoryPage} from '../pages/videocategory/videocategory';
 @Component({
   templateUrl: 'app.html'
 })
@@ -31,11 +30,12 @@ export class MyApp {
   congnghe=[];
   shownGroup = null;
   shownGroup2 = null;
-
+  video=[];
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
+    this.video=[{title:'Video',component:VideocategoryPage}];
     this.pages = [
       { title: 'Food', component: AmthucPage },
       { title: 'Beautiful', component: LamdepPage },
