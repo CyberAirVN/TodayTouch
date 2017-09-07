@@ -1,5 +1,5 @@
 <div class="list list1">
-  <div><img src="./assets/images/test.jpg" class="img1" style="display: block;"/></div>
+  <div><img (click)="openNavDetailsPage(item)" src="./assets/images/test.jpg" class="img1" style="display: block;"/></div>
   <div class="title-content" style="     font-weight: 500;text-align: left; color:white ;margin-left:5px"> 
     Goodbye, home button: iPhone 8 may be more radical than thought</div>
   </div>
@@ -7,9 +7,9 @@
     <ion-card>
       <ion-item>
           <ion-thumbnail item-start>
-            <img src="./assets/images/samsung1.jpg">
+            <img (click)="openNavDetailsPage(item)" src="./assets/images/samsung1.jpg">
           </ion-thumbnail>
-            <div ><h2 class="">Goodbye, home button: iPhone 8 may be more radical than thought  </h2></div>
+            <div ><h2 (click)="openNavDetailsPage(item)" class="">Goodbye, home button: iPhone 8 may be more radical than thought  </h2></div>
           <ion-row >
               <ion-col>
                 <button ion-button color="primary" clear small icon-start>
@@ -29,9 +29,9 @@
         <ion-card>
         <ion-item>
             <ion-thumbnail item-start>
-              <img src="./assets/images/samsung1.jpg">
+              <img (click)="openNavDetailsPage(item)" src="./assets/images/samsung1.jpg">
             </ion-thumbnail>
-              <div ><h2 class="">Goodbye, home button: iPhone 8 may be more radical than thought </h2></div>
+              <div ><h2 (click)="openNavDetailsPage(item)" class="">Goodbye, home button: iPhone 8 may be more radical than thought </h2></div>
             <ion-row >
                 <ion-col>
                   <button ion-button color="primary" clear small icon-start>
@@ -63,9 +63,9 @@
       <ion-card>
           <ion-item>
               <ion-thumbnail item-start>
-                <img src="./assets/images/samsung1.jpg">
+                <img (click)="openNavDetailsPage(item)" src="./assets/images/samsung1.jpg">
               </ion-thumbnail>
-                <div ><h2 class="">Goodbye, home button: iPhone 8 may be more radical than thought  </h2></div>
+                <div ><h2 (click)="openNavDetailsPage(item)" class="">Goodbye, home button: iPhone 8 may be more radical than thought  </h2></div>
               <ion-row >
                   <ion-col>
                     <button ion-button color="primary" clear small icon-start>
@@ -95,10 +95,10 @@
           </ion-list>
           <ion-card>
               <ion-item>
-                  <ion-thumbnail item-start>
+                  <ion-thumbnail (click)="openNavDetailsPage(item)"  item-start>
                     <img src="./assets/images/samsung1.jpg">
                   </ion-thumbnail>
-                    <div ><h2 class="">Goodbye, home button: iPhone 8 may be more radical than thought </h2></div>
+                    <div ><h2 (click)="openNavDetailsPage(item)" class="">Goodbye, home button: iPhone 8 may be more radical than thought </h2></div>
                   <ion-row >
                       <ion-col>
                         <button ion-button color="primary" clear small icon-start>
@@ -117,6 +117,23 @@
                 </ion-item>
               </ion-card>
               <ion-list>
+                <ion-list-header >
+                  <ion-row>
+                  <ion-col text-left>
+                  PHOTOS</ion-col>
+                  <ion-col text-right>
+                      MORE</ion-col></ion-row>
+                </ion-list-header>
+            </ion-list>
+                  <ion-card>    
+                  <ion-slides class="image-slider" loop="true" slidesPerView="2.5">
+                    <ion-slide *ngFor="let img of image">
+                      <img src="assets/images/{{img.image}}" class="thumb-img" imageViewer/>
+                      <h3>{{img.title}}</h3>
+                    </ion-slide>
+                  </ion-slides>
+                  </ion-card>
+              <ion-list>
                   <ion-list-header >
                     <ion-row>
                     <ion-col text-left>
@@ -129,9 +146,9 @@
               <ion-card>
                   <ion-item>
                       <ion-thumbnail item-start>
-                        <img src="./assets/images/samsung1.jpg">
+                        <img (click)="openNavDetailsPage(item)" src="./assets/images/samsung1.jpg">
                       </ion-thumbnail>
-                        <div ><h2 class="">Goodbye, home button: iPhone 8 may be more radical than thought  </h2></div>
+                        <div ><h2 (click)="openNavDetailsPage(item)" class="">Goodbye, home button: iPhone 8 may be more radical than thought  </h2></div>
                       <ion-row >
                           <ion-col>
                             <button ion-button color="primary" clear small icon-start>
@@ -159,16 +176,16 @@
                       </ion-list-header>
                   </ion-list>
                   <div class="list list1">
-                      <div><img src="./assets/images/samsung1.jpg" class="img1" style="display: block;"/></div>
+                      <div><img (click)="openNavDetailsPage(item)" src="./assets/images/samsung1.jpg" class="img1" style="display: block;"/></div>
                       <div class="title-content" style="text-align: left; color:white ;margin-left:5px"> 
                         Goodbye, home button: iPhone 8 may be more radical than thought</div>
                   </div>
                   <ion-card>
                     <ion-item>
                       <ion-thumbnail item-start >
-                        <img src="./assets/images/samsung1.jpg">
+                        <img (click)="openNavDetailsPage(item)" src="./assets/images/samsung1.jpg">
                       </ion-thumbnail>
-                      <div><h2 class="">Goodbye, home button: iPhone 8 may be more radical than thought  </h2></div>
+                      <div><h2 (click)="openNavDetailsPage(item)" class="">Goodbye, home button: iPhone 8 may be more radical than thought  </h2></div>
                         <ion-row>
                           <ion-col>
                             <button ion-button color="primary" clear small icon-start>
@@ -188,7 +205,7 @@
                       </ion-card>
                       <ion-card>
                           <ion-item>
-                                <div ><h2 class="">Goodbye, home button: iPhone 8 may be more radical than thought  </h2></div>
+                                <div ><h2 (click)="openNavDetailsPage(item)" class="">Goodbye, home button: iPhone 8 may be more radical than thought  </h2></div>
                                 <div  style=" margin-top: 10px;"  > <p>  Goodbye, home button: iPhone 8 may be more radical than thought</p></div>
                                 <ion-row >
                                   <ion-col>

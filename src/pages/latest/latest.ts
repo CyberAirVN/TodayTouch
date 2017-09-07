@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {DetailsPage} from '../detail/detail';
 
 /**
  * Generated class for the LatestPage page.
@@ -20,6 +21,9 @@ export class LatestPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LatestPage');
+  }
+  openNavDetailsPage(item) {
+    this.navCtrl.push(DetailsPage, { item: item });
   }
 
 }

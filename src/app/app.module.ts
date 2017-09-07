@@ -17,6 +17,8 @@ import {DetailsPage} from '../pages/detail/detail';
 import {TopnewPage} from '../pages/topnew/topnew'; 
 import {LatestPage} from '../pages/latest/latest';
 import {FeaturePage} from '../pages/feature/feature';
+import {PhotoPage} from '../pages/Photo/Photo';
+import { IonicImageViewerModule } from 'ionic-img-viewer';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -37,12 +39,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DetailsPage,
     TopnewPage,
     LatestPage,
-    FeaturePage
+    FeaturePage,
+    PhotoPage
     
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    IonicImageViewerModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -60,7 +64,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DetailsPage,
     TopnewPage,
     LatestPage,
-    FeaturePage
+    FeaturePage,
+    PhotoPage
   ],
   providers: [
     StatusBar,

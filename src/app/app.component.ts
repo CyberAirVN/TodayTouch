@@ -17,6 +17,7 @@ import {DetailsPage} from '../pages/detail/detail';
 import {TopnewPage} from '../pages/topnew/topnew'; 
 import {LatestPage} from '../pages/latest/latest';
 import {FeaturePage} from '../pages/feature/feature';
+import {PhotoPage} from '../pages/Photo/Photo';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,6 +29,7 @@ export class MyApp {
 
   pages= [];
   homes=[];
+  photo=[];
   congnghe=[];
   shownGroup = null;
   shownGroup2 = null;
@@ -43,6 +45,10 @@ export class MyApp {
     ];
     this.homes = [
       { title: 'Home', component: HomePage}
+      
+    ];
+    this.photo = [
+      { title: 'Photo', component: PhotoPage}
       
     ];
     this.congnghe=[

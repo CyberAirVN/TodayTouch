@@ -35,6 +35,12 @@
             </button>
           </ion-list>
 <!-- Công nghệ end -->
+<!-- Photo begin -->
+          <button menuClose ion-item *ngFor="let ph of photo" (click)="openPage(ph)" icon-start>
+            <ion-icon name="image"></ion-icon>  
+           Photo
+          </button>
+<!-- Photo end -->
     </ion-list>
   </ion-content>
 
