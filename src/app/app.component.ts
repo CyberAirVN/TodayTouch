@@ -16,12 +16,10 @@ import {DetailsPage} from '../pages/detail/detail';
 import {TopnewPage} from '../pages/topnew/topnew'; 
 import {LatestPage} from '../pages/latest/latest';
 import {FeaturePage} from '../pages/feature/feature';
-<<<<<<< HEAD
 import {PhotoPage} from '../pages/Photo/Photo';
 
-=======
+
 import {VideocategoryPage} from '../pages/videocategory/videocategory';
->>>>>>> feature/TT9-#9-Create-Video
 @Component({
   templateUrl: 'app.html'
 })
