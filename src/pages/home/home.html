@@ -22,19 +22,20 @@
     <ion-segment  color="xanh" [(ngModel)]="tabs" >
       <ion-segment-button (click)="selectTab(0)"
                           value="0"> TOP NEWS
-    </ion-segment-button>
-    <ion-segment-button (click)="selectTab(1)"
+                        </ion-segment-button>
+      <ion-segment-button (click)="selectTab(1)"
                         value="1">BRIEFS
                         </ion-segment-button>
-    <ion-segment-button (click)="selectTab(2)"
-                        value="2">TRENDING
+      <ion-segment-button (click)="selectTab(2)"
+                          value="2">VIDEOS
                         </ion-segment-button>
-    <ion-segment-button (click)="selectTab(3)"
-                        value="3">LAST
-                      </ion-segment-button>
-    <ion-segment-button (click)="selectTab(4)"
-                        value="4">FEATURE
-                    </ion-segment-button>
+      <ion-segment-button (click)="selectTab(3)"
+                        value="3">TRENDING
+                        </ion-segment-button>
+      <ion-segment-button (click)="selectTab(4)"
+                        value="4">LATEST
+                        </ion-segment-button>
+    
   </ion-segment>
 
   <ion-slides #pageSlider (ionSlideWillChange)="changeWillSlide($event)">
@@ -49,6 +50,9 @@
         <briefs></briefs>
        </ion-slide>
     <!--Briefs end tab  -->
+    <ion-slide>
+      <page-video></page-video>
+     </ion-slide>
     <!-- Slide 3 begin tab -->
        <ion-slide>
           <trending></trending>
@@ -57,9 +61,7 @@
        <ion-slide>
         <page-latest></page-latest>
         </ion-slide>
-        <ion-slide>
-           <page-feature></page-feature>
-          </ion-slide>
+        
           <!-- End Slide-Content -->
      </ion-slides>
 </ion-content>
