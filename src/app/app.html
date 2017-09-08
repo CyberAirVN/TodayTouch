@@ -5,7 +5,7 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
+  <ion-content class="content-menu-background">
     <ion-list>
 <!-- Trang chủ -->
         <button menuClose ion-item *ngFor="let h of homes" (click)="openPage(h)" icon-start>
@@ -44,7 +44,7 @@
 
 <!-- Video -->
       <button menuClose ion-item *ngFor="let v of video" (click)="openPage(v)" icon-start>
-        <ion-icon name="youtube"></ion-icon>  
+        <ion-icon name="logo-youtube"></ion-icon>  
         Video
       </button>
 <!-- End-Video -->
