@@ -17,6 +17,7 @@ import {TopnewPage} from '../pages/topnew/topnew';
 import {LatestPage} from '../pages/latest/latest';
 import {FeaturePage} from '../pages/feature/feature';
 import {PhotoPage} from '../pages/Photo/Photo';
+import {CommentPage} from '../pages/comment/comment';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
 import { VideoPage } from '../pages/video/video';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -42,7 +43,8 @@ import {VideocategoryPage} from '../pages/videocategory/videocategory';
     FeaturePage,
     PhotoPage,
     VideoPage,
-    VideocategoryPage
+    VideocategoryPage,
+    CommentPage
   ],
   imports: [
     BrowserModule,
@@ -68,7 +70,8 @@ import {VideocategoryPage} from '../pages/videocategory/videocategory';
     FeaturePage,
     PhotoPage,
     VideoPage,
-    VideocategoryPage
+    VideocategoryPage,
+    CommentPage
   ],
   providers: [
     StatusBar,

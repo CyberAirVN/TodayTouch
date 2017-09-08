@@ -17,6 +17,7 @@ import {TopnewPage} from '../pages/topnew/topnew';
 import {LatestPage} from '../pages/latest/latest';
 import {FeaturePage} from '../pages/feature/feature';
 import {PhotoPage} from '../pages/Photo/Photo';
+import {CommentPage} from '../pages/comment/comment';
 
 
 import {VideocategoryPage} from '../pages/videocategory/videocategory';

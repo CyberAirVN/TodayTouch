@@ -21,6 +21,24 @@
     <p>In this case, I can boil it down to the awkwardly placed fingerprint reader -- you will curse this -- and the still-up-in-the-air Bixby AI software, which combines Siri, Google Now and a camera add-on. (Samsung's Siri-like Bixby Voice tool is live in South Korea, but nowhere else and I use the rest of the Bixby features... never.) Also, while photo quality is great, it's weird to me that Samsung, usually so on top of trends, opted for one camera lens on the back instead of two.
       
       </p>
-    
+
+      <h6 class="h6-details ">THIS ARTICLE HAS 33 COMMENTS</h6>
+
+      <button ion-button color="secondary" (click)="openNavCommentPage(item)">ADD A COMMENTS</button>
+      <h6 class=".h6-youmayalsolike ">You may also like!</h6>
+      <ion-row>
+        <ion-col>
+          <ion-card *ngFor="let img of news">    
+                  <img src="assets/images/{{img.img}}"/>
+                  <h3>{{img.title}}</h3>
+              </ion-card>
+        </ion-col>
+        <ion-col>
+            <ion-card *ngFor="let img of news">    
+                    <img src="assets/images/{{img.img}}" />
+                    <h3>{{img.title}}</h3>
+                </ion-card>
+          </ion-col>
+      </ion-row>
   </ion-content>
     
