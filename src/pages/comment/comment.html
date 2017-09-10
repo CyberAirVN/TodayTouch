@@ -10,4 +10,19 @@
     <input type="text" value=""/>
     <button ion-button color="secondary" (click)="openNavCommentPage(item)">ADD A COMMENTS</button>
 
+    <ion-list>
+    <ion-card *ngFor="let cmt of comment">
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="assets/images/{{cmt.img}}">
+          </ion-avatar>
+          <h2>{{cmt.name}}</h2>
+          <p>Just now</p>
+        </ion-item>
+        <ion-card-content>
+          <p>{{cmt.cmt}}</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+
 </ion-content>
