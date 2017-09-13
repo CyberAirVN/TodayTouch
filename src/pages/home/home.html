@@ -1,24 +1,32 @@
 <ion-header>       
   <ion-navbar color="ybai">
-    <button ion-button menuToggle>
+    <button *ngIf="!toggled" ion-button menuToggle>
       <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
     </button>
-
-    <ion-title >
+    <ion-title *ngIf="!toggled">
       TODAY TOUCH
     </ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only>
-        <ion-icon name="search"></ion-icon>
-      </button>
-      <button ion-button icon-only >
-        <ion-icon name="settings"></ion-icon>
-      </button>
-    </ion-buttons>
-  </ion-navbar>
+    <ion-searchbar *ngIf="toggled" [(ngModel)]="searchTerm" [showCancelButton]="true" (ionCancel)="toggleSearch()"  (ionInput)="triggerInput($event)"></ion-searchbar>
 
+    <ion-buttons end *ngIf="!toggled">
+      <button ion-button icon-only (click)="toggleSearch()"><ion-icon name="search"></ion-icon></button>
+      <button ion-button icon-only><ion-icon name="settings"></ion-icon></button>
+    </ion-buttons> 
+  </ion-navbar>
 </ion-header>
-<ion-content padding id="page1" class="padding-0">
+
+
+<ion-content padding id="page1" class="padding-0"  >
+    <div class="div-backround" id="display"> 
+      </div>
+      <ion-list *ngIf="isGroupShown(i)" (click)="openSubCat($event,category)" class="list-search">
+        <ion-item *ngFor="let item of items">
+          {{ item }}
+        </ion-item>
+      </ion-list>
+
+
+
     <ion-segment  color="xanh" [(ngModel)]="tabs" >
       <ion-segment-button (click)="selectTab(0)"
                           value="0"> TOP NEWS

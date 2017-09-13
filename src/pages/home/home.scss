@@ -161,5 +161,24 @@ page-home {
     color: #fff;
     opacity: 1;
   }
+  .list-search {
+    position: fixed;
+    z-index: 9999999;
+    left: 0;
+    right: 0;  
+    top: 47px;
+}
+.div-backround{
+    display: none;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.8;
+    z-index: 2;
+
+}
 
 }   
