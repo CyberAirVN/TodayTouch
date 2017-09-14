@@ -1,0 +1,54 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Bookmark</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content  id="page1" class="padding-0">
+  <ion-segment  color="xanh" [(ngModel)]="tabs" >
+    <ion-segment-button (click)="selectTab(0)"
+                        value="0">  NEWS
+                      </ion-segment-button>
+    <ion-segment-button (click)="selectTab(1)"
+                      value="1">PHOTOS
+                      </ion-segment-button>
+    </ion-segment>
+  <ion-slides #pageSlider (ionSlideWillChange)="changeWillSlide($event)">
+     <ion-slide pager="true" class="" >
+        <ion-card>
+            <ion-item>
+                <ion-thumbnail item-left>
+                  <img  src="./assets/images/samsung1.jpg">
+                </ion-thumbnail>
+                  <div ><h2  class="">Goodbye, home button: iPhone 8 may be more radical than thought </h2></div>
+                <ion-row >
+                    <ion-col>
+                      <button ion-button color="primary" clear small icon-start>
+                        <ion-icon name='thumbs-up'></ion-icon>
+                        10 minutes ago
+                      </button>
+                    </ion-col>
+                    <ion-col>
+                      <button ion-button color="primary" clear small icon-start>
+                        <ion-icon name='text'></ion-icon>
+                        4 Comments
+                      </button>
+                    </ion-col>
+                    
+                  </ion-row>
+              </ion-item></ion-card>
+     </ion-slide> 
+     <ion-slide>
+          <ion-card style="padding:5px"> 
+            <ion-row>
+                <div><img src="assets/images/samsung.jpg" class="thumb-img" imageViewer/></div>
+                <div> <h2>Goodbye, home button: iPhone 8 may be more radical than thought</h2></div>
+            </ion-row>
+          </ion-card>
+     </ion-slide>
+   </ion-slides>
+</ion-content>
