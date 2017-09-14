@@ -18,6 +18,7 @@ import {LatestPage} from '../pages/latest/latest';
 import {FeaturePage} from '../pages/feature/feature';
 import {PhotoPage} from '../pages/Photo/Photo';
 import {CommentPage} from '../pages/comment/comment';
+import {SettingPage} from '../pages/Setting/Setting';
 
 
 import {VideocategoryPage} from '../pages/videocategory/videocategory';

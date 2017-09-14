@@ -3,6 +3,7 @@ import {  NavController } from 'ionic-angular';
 import {  ViewChild } from '@angular/core';
 import {  Slides } from 'ionic-angular'
 import {DetailsPage} from '../detail/detail';
+import {SettingPage} from '../Setting/Setting';
 
 @Component({
   selector: 'page-home',
@@ -34,6 +35,11 @@ export class HomePage {
   openNavDetailsPage(item) {
     this.navCtrl.push(DetailsPage, { item: item });
   }
+
+  openNavSettingPage(item) {
+    this.navCtrl.push(SettingPage, { item: item });
+  }
+
   toggleSearch(group) {
     this.toggled = this.toggled ? false : true;
     if (this.isGroupShown(group)) {

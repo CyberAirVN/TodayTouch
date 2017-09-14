@@ -1,0 +1,16 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Settings</ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content class="label-setting">
+    <ion-list >
+      <button ion-item *ngFor="let item of items"  icon-start  > 
+        {{ item.title }}
+      </button>
+    </ion-list>
+    
+  </ion-content>
