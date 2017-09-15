@@ -24,7 +24,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {VideocategoryPage} from '../pages/videocategory/videocategory';
 import {SettingPage} from '../pages/Setting/Setting';
-
+import {BookmarkPage} from'../pages/bookmark/bookmark';
 @NgModule({
   declarations: [
     MyApp,
@@ -46,7 +46,9 @@ import {SettingPage} from '../pages/Setting/Setting';
     VideoPage,
     VideocategoryPage,
     CommentPage,
-    SettingPage
+    SettingPage,
+
+    BookmarkPage
   ],
   imports: [
     BrowserModule,
@@ -74,7 +76,9 @@ import {SettingPage} from '../pages/Setting/Setting';
     VideoPage,
     VideocategoryPage,
     CommentPage,
-    SettingPage
+    SettingPage,
+
+    BookmarkPage
   ],
   providers: [
     StatusBar,

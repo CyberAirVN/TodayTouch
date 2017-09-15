@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {CommentPage} from '../comment/comment';
-
+import {BookmarkPage} from '../bookmark/bookmark';
 @Component({
   selector: 'detail',
   templateUrl: 'detail.html'
@@ -22,5 +22,8 @@ export class DetailsPage {
   }
   openNavCommentPage(item) {
     this.navCtrl.push(CommentPage, { item: item });
+  }
+  openNavbookmarkPage(item) {
+    this.navCtrl.push(BookmarkPage, { item: item });
   }
 }
