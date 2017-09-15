@@ -1,6 +1,67 @@
 page-bookmark {
+  button.button-md{
+    font-size: 1rem;
+    text-transform: unset;
+    padding: 0;
+  }
+  .col{
+    padding: 0;
+  }
+  .item-md h2 {
+    font-weight: 600;}
+    ion-label.label.label-md {
+      white-space: unset;
+      
+    }
+  // Card header  
+  ion-list.list.list-md{
+    margin-bottom: 0px;
+    display: inherit;
     
+
+  }  
+  img.img1 {
+    object-fit: fill;
+    margin: auto;
     
+    ;
+  } 
+  .list.list1 {
+    width: 100%;
+    position: relative;
+    padding-bottom: 5px;}
+    .title-content{
+      position: absolute;
+      margin: 0;
+      bottom: 10px;
+    }
+  .title-h2{
+   
+    text-align: left;
+    color: white;
+    margin-left: 4px;
+  }
+ .card-title{
+    position: absolute;
+    top: 139px;
+    text-align: left;
+    padding-left: 5px;
+    color: white;
+  }
+  .scroll-content {
+    padding: 0 !important;
+    overflow-x: unset;
+    overflow-y: scroll;
+  }
+  .swiper-container{
+    height: auto;
+  }
+  ion-slide{
+    padding: 10px;
+  }
+  .swiper-slide{
+    align-items: unset;
+  }
 // SILE MENU 
 $num-of-tabs: 5;
 

@@ -23,7 +23,7 @@ import { VideoPage } from '../pages/video/video';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {VideocategoryPage} from '../pages/videocategory/videocategory';
-
+import {BookmarkPage} from'../pages/bookmark/bookmark';
 @NgModule({
   declarations: [
     MyApp,
@@ -44,7 +44,8 @@ import {VideocategoryPage} from '../pages/videocategory/videocategory';
     PhotoPage,
     VideoPage,
     VideocategoryPage,
-    CommentPage
+    CommentPage,
+    BookmarkPage
   ],
   imports: [
     BrowserModule,
@@ -71,7 +72,8 @@ import {VideocategoryPage} from '../pages/videocategory/videocategory';
     PhotoPage,
     VideoPage,
     VideocategoryPage,
-    CommentPage
+    CommentPage,
+    BookmarkPage
   ],
   providers: [
     StatusBar,
