@@ -1,6 +1,6 @@
 
 $backgroud: rgba(158, 158, 158, 0.31);
-$bg-list-header:linear-gradient(120deg, #155799, #159957);
+$bg-list-header:linear-gradient(120deg, #2479CE, #1AABBA);
 page-home {
   ion-card.card.card-md {
     margin: 5px 0px 5px 0px;
@@ -153,8 +153,12 @@ page-home {
      top: calc(100% - 4px);
      transition: left 0.3s ease-out;
    }
+   .segment-md .segment-button{
+     color: white;
+     opacity: 0.5;
+   }
    ion-segment {
-    background-image: linear-gradient(120deg, #155799, #159957);
+    background-image: linear-gradient(120deg, #2479CE, #1AABBA);
    }
    .segment-md-xanh .segment-button.activated, .segment-md-xanh .segment-button.segment-activated {
     border-color: #FFFFFF;

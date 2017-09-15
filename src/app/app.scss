@@ -15,7 +15,8 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 .toolbar-background-md {
-    background-image: linear-gradient(120deg, #155799, #159957);
+    
+    background-image: linear-gradient(120deg, #2479CE, #1AABBA);
     }
     .toolbar-title-md{
       color: #ffffff;
@@ -34,5 +35,5 @@ button.item.item-block.item-md {
     border-color: rgba(255, 255, 255, -3.8);
 }
 .content-menu-background {
-    background-image: linear-gradient(120deg, #155799, #159957);
+    background-image: linear-gradient(120deg, #2479CE, #1AABBA);
 }
