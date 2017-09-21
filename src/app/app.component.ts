@@ -3,7 +3,6 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import {AmthucPage} from '../pages/Amthuc/Amthuc';
 import {LamdepPage} from '../pages/Lamdep/Lamdep';
 import {CuocSongPage} from '../pages/Cuocsong/Cuocsong';
@@ -19,8 +18,6 @@ import {FeaturePage} from '../pages/feature/feature';
 import {PhotoPage} from '../pages/Photo/Photo';
 import {CommentPage} from '../pages/comment/comment';
 import {SettingPage} from '../pages/Setting/Setting';
-
-
 import {VideocategoryPage} from '../pages/videocategory/videocategory';
 @Component({
   templateUrl: 'app.html'

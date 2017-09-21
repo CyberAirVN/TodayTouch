@@ -3,7 +3,6 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import {AmthucPage} from '../pages/Amthuc/Amthuc';
 import {LamdepPage} from '../pages/Lamdep/Lamdep';
 import {CuocSongPage} from '../pages/Cuocsong/Cuocsong';
@@ -29,7 +28,6 @@ import {BookmarkPage} from'../pages/bookmark/bookmark';
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
     AmthucPage,
     LamdepPage,
     CuocSongPage,
@@ -47,7 +45,6 @@ import {BookmarkPage} from'../pages/bookmark/bookmark';
     VideocategoryPage,
     CommentPage,
     SettingPage,
-
     BookmarkPage
   ],
   imports: [
@@ -59,7 +56,6 @@ import {BookmarkPage} from'../pages/bookmark/bookmark';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
     AmthucPage,
     LamdepPage,
     CuocSongPage,
@@ -77,7 +73,6 @@ import {BookmarkPage} from'../pages/bookmark/bookmark';
     VideocategoryPage,
     CommentPage,
     SettingPage,
-
     BookmarkPage
   ],
   providers: [
