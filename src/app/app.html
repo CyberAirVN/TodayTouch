@@ -9,16 +9,16 @@
     <ion-list  no-lines>
 <!-- Trang chủ -->
         <button menuClose ion-item *ngFor="let h of homes" (click)="openPage(h)" icon-start>
-            <ion-icon name="home"></ion-icon>  
+            <ion-icon name="ios-home-outline"></ion-icon>  
             Home
           </button>
 <!-- Trang chủ end -->
 <!-- Cẩm nang menu -->
         <button ion-item (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}" icon-start>
-            <ion-icon name="book"></ion-icon>  
+            <ion-icon name="ios-book-outline"></ion-icon>  
             Handbook
           </button>
-          <ion-list class="sub-menu" *ngIf="isGroupShown(i)" (click)="openSubCat($event,category)">
+          <ion-list style="margin-left: 27px;"  *ngIf="isGroupShown(i)" (click)="openSubCat($event,category)">
               <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" icon-start>
               {{p.title}}
               </button>
@@ -26,10 +26,10 @@
 <!--Cẩm nang end  -->
 <!-- Công nghệ menu -->
         <button ion-item (click)="toggleGroup2(i)" [ngClass]="{active: isGroupShown2(i)}" icon-start>
-          <ion-icon name="git-branch"></ion-icon>  
+          <ion-icon name="ios-git-branch-outline"></ion-icon>  
           Technology
         </button>
-        <ion-list class="sub-menu"  *ngIf="isGroupShown2(i)" (click)="openSubCat($event,category)">
+        <ion-list style="margin-left: 27px;"  *ngIf="isGroupShown2(i)" (click)="openSubCat($event,category)">
             <button menuClose ion-item *ngFor="let c of congnghe" (click)="openPage(c)" icon-start>
               {{c.title}}
             </button>
@@ -37,14 +37,14 @@
 <!-- Công nghệ end -->
 <!-- Photo begin -->
           <button menuClose ion-item *ngFor="let ph of photo" (click)="openPage(ph)" icon-start>
-            <ion-icon name="image"></ion-icon>  
+            <ion-icon name="ios-images-outline"></ion-icon>  
            Photo
           </button>
 <!-- Photo end -->
 
 <!-- Video -->
       <button menuClose ion-item *ngFor="let v of video" (click)="openPage(v)" icon-start>
-        <ion-icon name="logo-youtube"></ion-icon>  
+        <ion-icon name="ios-play-outline"></ion-icon>  
         Video
       </button>
 <!-- End-Video -->
