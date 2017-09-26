@@ -6,7 +6,7 @@
   </ion-header>
 
   <ion-content class="content-menu-background">
-    <ion-list>
+    <ion-list  no-lines>
 <!-- Trang chủ -->
         <button menuClose ion-item *ngFor="let h of homes" (click)="openPage(h)" icon-start>
             <ion-icon name="home"></ion-icon>  
@@ -18,7 +18,7 @@
             <ion-icon name="book"></ion-icon>  
             Handbook
           </button>
-          <ion-list  *ngIf="isGroupShown(i)" (click)="openSubCat($event,category)">
+          <ion-list class="sub-menu" *ngIf="isGroupShown(i)" (click)="openSubCat($event,category)">
               <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" icon-start>
               {{p.title}}
               </button>
@@ -29,7 +29,7 @@
           <ion-icon name="git-branch"></ion-icon>  
           Technology
         </button>
-        <ion-list  *ngIf="isGroupShown2(i)" (click)="openSubCat($event,category)">
+        <ion-list class="sub-menu"  *ngIf="isGroupShown2(i)" (click)="openSubCat($event,category)">
             <button menuClose ion-item *ngFor="let c of congnghe" (click)="openPage(c)" icon-start>
               {{c.title}}
             </button>
