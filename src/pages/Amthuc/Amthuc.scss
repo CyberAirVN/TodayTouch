@@ -1,6 +1,9 @@
 $backgroud: rgba(158, 158, 158, 0.31);
 $bg-list-header:linear-gradient(120deg, #155799, #159957);
 page-amthuc{
+  ion-thumbnail[item-start] {
+  }
+    
     ion-card.card.card-md {
         margin: 5px 0px 5px 0px;
         width: 100%;
