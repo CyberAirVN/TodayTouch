@@ -24,7 +24,7 @@
   </script>-->
 
   <link href="build/main.css" rel="stylesheet">
-  <style>
+  <!-- <style>
     .loaded.cssload-thecube{
       opacity: 0;
       visibility: hidden;
@@ -224,19 +224,19 @@
         -ms-transform: translateX(0);  /* IE 9 */
         transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
     }
-  </style>
+  </style> -->
 </head>
 <body>
-
   <!-- Ionic's root component and where the app will load -->
-  <div class="cssload-thecube" style="z-index:1001;margin:auto">
+  <!-- <div class="cssload-thecube" style="z-index:1001;margin:auto">
     
     <div class="cssload-cube cssload-c1"></div>
     <div class="cssload-cube cssload-c2"></div>
     <div class="cssload-cube cssload-c4"></div>
     <div class="cssload-cube cssload-c3"></div>
   </div> 
-  <div class="loader-section"></div>
+  <div class="loader-section"></div> -->
+  
   <ion-app></ion-app>
 
   <!-- The polyfills js is generated during the build process -->
@@ -249,15 +249,15 @@
   <!-- The main bundle js is generated during the build process -->
   <script src="build/main.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-  <script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <!-- <script>
     $(document).ready(function() {
     setTimeout(function(){
       $('.loader-section').addClass('loaded');
       $('.cssload-thecube').addClass('loaded');
-    }, 3500);
+    }, 3500 );
     
 });
-  </script>
+  </script> -->
  </body>
 </html>
