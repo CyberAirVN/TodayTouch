@@ -49,9 +49,8 @@ import {BookmarkPage} from'../pages/bookmark/bookmark';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp,{
-    IonicImageViewerModule,
-    backButtonIcon:'ios-arrow-back-outline'})
+    IonicModule.forRoot(MyApp),
+    IonicImageViewerModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

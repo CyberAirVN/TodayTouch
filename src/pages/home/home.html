@@ -16,9 +16,9 @@
 </ion-header>
 
 
-<ion-content padding id="page1" class="padding-0"  >
+<ion-content padding id="page1" class="padding-0"   >
     
-    <div class="div-backround" id="display"> 
+    <div class="div-backround" id="display" ng-if="toggled" (click)="toggleSearch()"> 
       </div>
       <ion-list *ngIf="isGroupShown(i)" (click)="openSubCat($event,category)" class="list-search">
         <ion-item *ngFor="let item of items">

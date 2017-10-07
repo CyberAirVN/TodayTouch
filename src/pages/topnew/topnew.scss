@@ -12,4 +12,7 @@ page-topnew {
         color: #222;
         text-align: left;
     }
+    .item-md ion-thumbnail[item-left], .item-md ion-avatar[item-start], .item-md ion-thumbnail[item-start] {
+        margin: 0px 16px 8px 0;
+    }
 }
