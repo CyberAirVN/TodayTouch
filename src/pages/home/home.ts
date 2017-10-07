@@ -70,18 +70,18 @@ triggerInput( ev: any ) {
       })
     }  
 }
-// toggleGroup(group) {
-//     if (this.isGroupShown(group)) {
-//         this.shownGroup = null;
-//         document.getElementById("display").style.display="none";
-        
-//     } else {
-//         this.shownGroup = group;
-//        document.getElementById("display").style.display="block";
-//     }
+toggleGroup(group) {
+    if (this.isGroupShown(group)) {
+        this.shownGroup = null;
+
+    } else {
+        this.shownGroup = group;
+    }
     
-// };
+};
 isGroupShown(group) {
     return this.shownGroup === group;
 };
+
+
 }
