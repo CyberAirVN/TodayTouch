@@ -34,13 +34,12 @@ etc…
 
 ### Viewing the app in a browser
 
-
     npm install -g ionic cordova
     git clone https://github.com/CyberAirVN/TodayTouch.git
     cd TodayTouch
     $ ionic serve
 ### Viewing the app in IOS AND ANDROID
-This assumes you already have an emulator setup for iOS or Android. Substitute `ios` for `android` below to use Android.
+
     npm install -g ionic cordova
     git clone https://github.com/CyberAirVN/TodayTouch.git
     cd TodayTouch
