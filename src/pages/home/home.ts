@@ -29,6 +29,7 @@ export class HomePage {
   changeWillSlide($event) {
  this.tabs = $event._snapIndex.toString();
 }
+
   selectTab(index){
     this.pageSlider.slideTo(index);
   }
