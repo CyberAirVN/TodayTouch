@@ -3,12 +3,12 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import {AmthucPage} from '../pages/Amthuc/Amthuc';
-import {LamdepPage} from '../pages/Lamdep/Lamdep';
-import {CuocSongPage} from '../pages/Cuocsong/Cuocsong';
-import {DienTuPage} from '../pages/Dientu/Dientu';
-import {DiDongPage} from '../pages/Didong/Didong';
-import {OtoxePage} from '../pages/Otoxe/Otoxe';
+import {FoodPage} from '../pages/Food/Food';
+import {BeautifulPage} from '../pages/Beautiful/Beautiful';
+import {LifePage} from '../pages/Life/Life';
+import {ElectronicPage} from '../pages/Electronic/Electronic';
+import {MobilePage} from '../pages/Mobile/Mobile';
+import {CarbikePage} from '../pages/Car-bike/Car-bike';
 import {BriefsPage} from '../pages/Briefs/Briefs';
 import {TrendingPage} from '../pages/Trending/Trending';
 import {DetailsPage} from '../pages/detail/detail';
@@ -28,12 +28,12 @@ import {BookmarkPage} from'../pages/bookmark/bookmark';
   declarations: [
     MyApp,
     HomePage,
-    AmthucPage,
-    LamdepPage,
-    CuocSongPage,
-    DienTuPage,
-    DiDongPage,
-    OtoxePage,
+    FoodPage,
+    BeautifulPage,
+    LifePage,
+    ElectronicPage,
+    MobilePage,
+    CarbikePage,
     BriefsPage,
     TrendingPage,
     DetailsPage,
@@ -56,12 +56,12 @@ import {BookmarkPage} from'../pages/bookmark/bookmark';
   entryComponents: [
     MyApp,
     HomePage,
-    AmthucPage,
-    LamdepPage,
-    CuocSongPage,
-    DienTuPage,
-    DiDongPage,
-    OtoxePage,
+    FoodPage,
+    BeautifulPage,
+    LifePage,
+    ElectronicPage,
+    MobilePage,
+    CarbikePage,
     BriefsPage,
     TrendingPage,
     DetailsPage,

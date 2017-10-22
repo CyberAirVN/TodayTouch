@@ -1,0 +1,95 @@
+$backgroud: rgba(158, 158, 158, 0.31);
+$bg-list-header:linear-gradient(120deg, #155799, #159957);
+otoxe{
+    ion-card.card.card-md {
+        margin: 5px 0px 5px 0px;
+        width: 100%;
+        
+      }
+      ion-list-header.item.item-md.list-header.list-header-md {
+        color: white;
+        background-image:$bg-list-header;
+        margin-top: 10px;
+        margin-bottom: 5px;
+       
+      }
+      .button-clear-md-primary {
+        border-color: transparent;
+        color: #9daaad;
+        background-color: transparent;
+    }
+      
+      .content-md {
+        color: #000;
+        background-color:$backgroud;
+    }
+      button.button-md{
+        font-size: 1rem;
+        text-transform: unset;
+        padding: 0;
+        margin-right: 10px;
+      }
+      .col{
+        padding: 0;
+      }
+      .item-md h2 {
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+        ion-label.label.label-md {
+          white-space: unset;
+          
+          
+        }
+      // Card header  
+      ion-list.list.list-md {
+        margin-bottom: 0px;
+        
+    
+      }  
+      img.img1 {
+        object-fit: fill;
+        width: 100%;
+      } 
+      .list.list1 {
+        width: 100%;
+        position: relative;}
+        .title-content{
+          position: absolute;
+          margin: 0;
+          bottom: 10px;
+        }
+      .title-h2{
+       
+        text-align: left;
+        color: white;
+        margin-left: 4px;
+      }
+     .card-title{
+        position: absolute;
+        top: 139px;
+        text-align: left;
+        padding-left: 5px;
+        color: white;
+      }
+      .scroll-content {
+        padding: 5px !important;
+        overflow-x: unset;
+        overflow-y: scroll;
+      }
+      .swiper-container{
+        height: auto;
+      }
+    }
+     
+      
+      
+      
+       
+    
+        
+    
+      
+       
+       
+       

@@ -3,12 +3,12 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
-import {AmthucPage} from '../pages/Amthuc/Amthuc';
-import {LamdepPage} from '../pages/Lamdep/Lamdep';
-import {CuocSongPage} from '../pages/Cuocsong/Cuocsong';
-import {DienTuPage} from '../pages/Dientu/Dientu';
-import {DiDongPage} from '../pages/Didong/Didong';
-import {OtoxePage} from '../pages/Otoxe/Otoxe';
+import {FoodPage} from '../pages/Food/Food';
+import {BeautifulPage} from '../pages/Beautiful/Beautiful';
+import {LifePage} from '../pages/Life/Life';
+import {ElectronicPage} from '../pages/Electronic/Electronic';
+import {MobilePage} from '../pages/Mobile/Mobile';
+import {CarbikePage} from '../pages/Car-bike/Car-bike';
 import {BriefsPage} from '../pages/Briefs/Briefs';
 import {TrendingPage} from '../pages/Trending/Trending';
 import {DetailsPage} from '../pages/detail/detail';
@@ -40,9 +40,9 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.video=[{title:'Video',component:VideocategoryPage}];
     this.pages = [
-      { title: 'Food', component: AmthucPage },
-      { title: 'Beautiful', component: LamdepPage },
-      { title: 'Life', component: CuocSongPage }
+      { title: 'Food', component: FoodPage },
+      { title: 'Beautiful', component: BeautifulPage },
+      { title: 'Life', component: LifePage }
     ];
     this.homes = [
       { title: 'Home', component: HomePage}
@@ -53,9 +53,9 @@ export class MyApp {
       
     ];
     this.congnghe=[
-      {title: 'Electronics', component: DienTuPage},
-      {title: 'Mobile', component: DiDongPage},
-      {title: 'Car-motobike', component: OtoxePage}
+      {title: 'Electronics', component: ElectronicPage},
+      {title: 'Mobile', component: MobilePage},
+      {title: 'Car-motobike', component: CarbikePage}
     ];
 
   }
