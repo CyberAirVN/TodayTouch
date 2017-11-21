@@ -7,6 +7,7 @@ import {BookmarkPage} from '../bookmark/bookmark';
   selector: 'detail',
   templateUrl: 'detail.html'
 })
+
 export class DetailsPage {
   news=[];
   news2=[];

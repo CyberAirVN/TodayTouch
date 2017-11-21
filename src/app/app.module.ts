@@ -49,9 +49,16 @@ import {BookmarkPage} from'../pages/bookmark/bookmark';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
-    IonicImageViewerModule
-  ],
+    IonicImageViewerModule,
+    IonicModule.forRoot(MyApp, {
+      backButtonIcon: 'ios-arrow-back-outline',
+      iconMode: 'ios',
+      modalEnter: 'modal-slide-in',
+      modalLeave: 'modal-slide-out',
+      tabsPlacement: 'bottom',
+      pageTransition: 'ios-transition'
+    },
+    )],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,

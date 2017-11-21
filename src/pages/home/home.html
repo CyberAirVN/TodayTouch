@@ -4,13 +4,13 @@
       <ion-icon ios="ios-menu" md="md-menu"></ion-icon>
     </button>
     <ion-title *ngIf="!toggled">
-      TODAY TOUCH
+      Today Touch
     </ion-title>
     <ion-searchbar *ngIf="toggled" [(ngModel)]="searchTerm" [showCancelButton]="true" (ionCancel)="toggleSearch()"  (ionInput)="triggerInput($event)"></ion-searchbar>
 
     <ion-buttons end *ngIf="!toggled">
-      <button ion-button icon-only (click)="toggleSearch()"><ion-icon name="search"></ion-icon></button>
-      <button ion-button icon-only (click)="openNavSettingPage(item)"><ion-icon name="settings"></ion-icon></button>
+      <button ion-button icon-only (click)="toggleSearch()"><ion-icon name="ios-search-outline"></ion-icon></button>
+      <button ion-button icon-only (click)="openNavSettingPage(item)"><ion-icon name="ios-settings-outline"></ion-icon></button>
     </ion-buttons> 
   </ion-navbar>
 </ion-header>
@@ -38,10 +38,10 @@
       <!-- <ion-segment-button (click)="selectTab(2)"
                           value="2">VIDEOS
                         </ion-segment-button> -->
-      <ion-segment-button (click)="selectTab(3)"
+      <ion-segment-button (click)="selectTab(2)"
                         value="2">TRENDING
                         </ion-segment-button>
-      <ion-segment-button (click)="selectTab(4)"
+      <ion-segment-button (click)="selectTab(3)"
                         value="3">LATEST
                         </ion-segment-button>
     
