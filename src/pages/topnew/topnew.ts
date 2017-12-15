@@ -16,17 +16,24 @@ import {DetailsPage} from '../detail/detail';
 })
 export class TopnewPage {
   image=[];
+  image2=[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.image=[
-      { image: 'samsung1.jpg', title: 'Samsung Galaxy S8 review:The most beautiful phone ever has one wildly annoying issue ' },
-      { image: 'samsung2.jpg', title: 'Samsung Galaxy S8 review:The most beautiful phone ever has one wildly annoying issue ' },
-      { image: 'samsung.jpg', title: 'Samsung Galaxy S8 review:The most beautiful phone ever has one wildly annoying issue ' },
-      { image: 'samsung2.jpg', title: 'Samsung Galaxy S8 review:The most beautiful phone ever has one wildly annoying issue ' },
-      { image: 'samsung1.jpg', title: 'Samsung Galaxy S8 review:The most beautiful phone ever has one wildly annoying issue ' },
-      { image: 'samsung.jpg', title: 'Samsung Galaxy S8 review:The most beautiful phone ever has one wildly annoying issue ' },
-      { image: 'samsung2.jpg', title: 'Samsung Galaxy S8 review:The most beautiful phone ever has one wildly annoying issue ' }
+      { image: 'samsung1.jpg', title: 'Samsung Galaxy S8 review' },
+      { image: 'samsung2.jpg', title: 'Samsung Galaxy S8 review' },
+      { image: 'samsung.jpg', title: 'Samsung Galaxy S8 review' },
+      { image: 'samsung2.jpg', title: 'Samsung Galaxy S8 review' },
     ];
+    this.image2=[
+      { image: 'samsung1.jpg', title: 'Samsung Galaxy S8 review' },
+      { image: 'samsung.jpg', title: 'Samsung Galaxy S8 review' },
+      { image: 'samsung2.jpg', title: 'Samsung Galaxy S8 review' },
+      { image: 'samsung2.jpg', title: 'Samsung Galaxy S8 review' }
+
+    ];
+
+
   }
 
   ionViewDidLoad() {

@@ -136,8 +136,8 @@
                     </ion-row>
                 </ion-item>
               </ion-card>
-              <ion-list>
-                <ion-list-header >
+            <ion-list>
+            <ion-list-header >
                   <ion-row>
                   <ion-col text-left>
                   PHOTOS</ion-col>
@@ -145,14 +145,26 @@
                     <ion-icon name="more"></ion-icon></ion-col></ion-row>
                 </ion-list-header>
             </ion-list>
-                  <ion-card>    
-                  <ion-slides class="image-slider" loop="true" slidesPerView="2.5">
-                    <ion-slide *ngFor="let img of image">
-                      <img src="assets/images/{{img.image}}" class="thumb-img" imageViewer/>
-                      <h3>{{img.title}}</h3>
-                    </ion-slide>
-                  </ion-slides>
+              <ion-row>
+                <ion-col col-4>
+                  <ion-card *ngFor="let img of image">    
+                        <img src="assets/images/{{img.image}}" class="thumb-img" imageViewer/>
+                        <h3>{{img.title}}</h3>
                   </ion-card>
+                </ion-col>
+                <ion-col col-4>
+                    <ion-card *ngFor="let img of image2">    
+                          <img src="assets/images/{{img.image}}" class="thumb-img" imageViewer/>
+                          <h3>{{img.title}}</h3>
+                    </ion-card>
+                  </ion-col>
+                  <ion-col col-4>
+                      <ion-card *ngFor="let img of image">    
+                            <img src="assets/images/{{img.image}}" class="thumb-img" imageViewer/>
+                            <h3>{{img.title}}</h3>
+                      </ion-card>
+                    </ion-col>
+              </ion-row>
               <ion-list>
                   <ion-list-header >
                     <ion-row>
